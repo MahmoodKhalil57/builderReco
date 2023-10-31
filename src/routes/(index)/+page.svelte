@@ -17,12 +17,10 @@
 </script>
 
 <main>
-	<div class="min-h-screen flex items-center justify-center">
-		{#if data.contentData || isPreviewing()}
-			<!-- Render builder content with all required props -->
-			<Content {...data.contentData} />
-		{:else}
-			<p>Loading...</p>
-		{/if}
-	</div>
+	{#if data.contentData || isPreviewing()}
+		<!-- Render builder content with all required props -->
+		<Content {...data.contentData} />
+	{:else}
+		<p>Loading...</p>
+	{/if}
 </main>
