@@ -17,7 +17,7 @@
 </script>
 
 <main>
-	<div class="h-screen flex items-center justify-center">
+	<div class="min-h-screen flex items-center justify-center">
 		{#if data.contentData || isPreviewing()}
 			<!-- Render builder content with all required props -->
 			<Content {...data.contentData} />
